@@ -1,16 +1,29 @@
-### Hi there 👋
+# STAR-RL
 
-<!--
-**STAR-RL/STAR-RL** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is the implementation of STAR-RL
 
-Here are some ideas to get you started:
+## Environment
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Python 3.6.1 <br/>
+Pytorch 0.3.1.post2 <br/>
+torchvision 0.2.0 <br/>
+numpy 1.14.2 <br/>
+tensorboardX 1.7 <br/>
+
+## Training
+1. We first train the spatial manager (spM) and patch work (PW), run
+```
+sh ./launch/train_spM_PW.sh
+```
+
+2. Then, we train the spatial manager (spM), temporal manager (tpM) and patch work (PW) together, run
+```
+sh ./launch/train_all.sh
+```
+
+## Testing
+
+Run
+```
+sh ./launch/test.sh
+```
