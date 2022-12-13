@@ -11,15 +11,11 @@ numpy 1.14.2 <br/>
 tensorboardX 1.7 <br/>
 
 ## Training
-1. We first train the spatial manager (spM) and patch work (PW), run
+Train STAR-RL, run
 ```
-sh ./launch/train_spM_PW.sh
+sh ./launch/train.sh
 ```
 
-2. Then, we train the spatial manager (spM), temporal manager (tpM) and patch work (PW) together, run
-```
-sh ./launch/train_all.sh
-```
 
 ## Testing
 
