@@ -10,11 +10,10 @@ class config:
     test_episodes = 500 #default : 500
     early_break = False # default : False ; early break for testing
     save_episodes = 1000 #default : 20000 ; when value is larger than the total episodes, it doesn't save models
-    resume_model = '' #'/apdcephfs/share_916081/jarviswang/wt/code/RL/MRI_RL_rgb/logs/2_17_17_6/models/best_agent2.pth'
-    resume_picker = '' # './logs/2_14_18_8/models/best_agent1.pth'
+    resume_model = '' 
+    resume_picker = ''
     resume_patchCritic = ''
     resume_agent1 = ''
-    # best version : './logs/1_25_15_30/models/best_agent1.pth' #'./logs/1_14_15_47/models/1_14_15_10000_agent1.pth' # default: ''
     display = 100 # default: 100
     #-------------rl_related--------------------#
     pi_loss_coeff = 1.0
@@ -70,9 +69,9 @@ class config:
     # whether use shuffled dataset
     use_shuffled_dataset = True # default: False 
     data_degradation = 'bicubic' #'blur_bicubic_k_3_sig_1.0' #'bicubic' # 'bicubic'
-    shuffled_data_train = '/apdcephfs/share_916081/jarviswang/wt/dataset/HistoSR/generated_data/shuffle_data/'+data_degradation+'/train'
-    shuffled_data_test = '/apdcephfs/share_916081/jarviswang/wt/dataset/HistoSR/generated_data/shuffle_data/'+data_degradation+'/test'
-    test_list_dir = '/apdcephfs/share_916081/jarviswang/wt/code/RL/evaluation/Anno/test.txt'
+    shuffled_data_train = './'+data_degradation+'/train'
+    shuffled_data_test = './'+data_degradation+'/test'
+    test_list_dir = './Anno/test.txt'
     # use light agent1
     use_sm_agent1 = True # default : False
     #-----------reward--------------#
