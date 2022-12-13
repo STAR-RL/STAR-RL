@@ -69,9 +69,9 @@ class config:
     # whether use shuffled dataset
     use_shuffled_dataset = True # default: False 
     data_degradation = 'bicubic' #'blur_bicubic_k_3_sig_1.0' #'bicubic' # 'bicubic'
-    shuffled_data_train = '/apdcephfs/share_916081/jarviswang/wt/dataset/HistoSR/generated_data/shuffle_data/'+data_degradation+'/train'
-    shuffled_data_test = '/apdcephfs/share_916081/jarviswang/wt/dataset/HistoSR/generated_data/shuffle_data/'+data_degradation+'/test'
-    test_list_dir = '/apdcephfs/share_916081/jarviswang/wt/code/RL/evaluation/Anno/test.txt'
+    shuffled_data_train = './'+data_degradation+'/train'
+    shuffled_data_test = './'+data_degradation+'/test'
+    test_list_dir = './Anno/test.txt'
     # ---------- discriminator ------------#
     use_action_input = True # defualt : False ; if True, use action as input of discriminator
     action_input_type = 'vector' # 'map' or 'vector'
